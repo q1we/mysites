@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    margin-top: 70px!important; 
+}
+/*注意清除浏览器缓存，以免看不到效果*/
+ul.navbar-right {
+    
+    margin-right: 0;
+}
+

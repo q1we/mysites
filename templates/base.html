@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="{% url 'home' %}">个人博客网站
@@ -86,6 +86,26 @@
     </div>
     
     {% block content %}{% endblock %}
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <!--  footer  --> 
+            <div class="footer" style="text-align: center">
+                <div class="website-info">
+                    <p>
+                        <a href="/">网站首页</a>
+                        <a href="">鄂ICP备20012083</a>
+                         Copyright©2020 版权所有
+                    </p>
+                    <p>意见反馈请联系 (2247673065@qq.com)</p>
+                </div>
+            </div>
+        </div>
+    </nav> 
+
+
+    
+
 
     <!-- Modal -->
     <div class="modal fade" id="login_modal" tabindex="-1" role="dialog">

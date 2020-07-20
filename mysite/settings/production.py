@@ -32,7 +32,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mysite_db',
         'USER': 'lj',
-        'PASSWORD': 'DATABASES_PASSWORD',
+        'PASSWORD': DATABASES_PASSWORD,
         'HOST': 'localhost',
         'PORT': '3306',
 
@@ -50,7 +50,7 @@ EMAIL_POST = 465 # 腾讯云服务器就开25，阿里云就开465，省去许�
 EMAIL_HOST_USER = '2247673065@qq.com'
 EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
 EMAIL_SUBJECT_PREFIX = '[不白的博客]'
-EMAIL_USE_SSH = True # 与SMTP服务器通信时，是否启动SSH链接（安全连接）
+EMAIL_USE_SSL = True # 与SMTP服务器通信时，是否启动SSH链接（安全连接）
 
 ADMINS = (
     ('admin', '2247673065@qq.com'),
